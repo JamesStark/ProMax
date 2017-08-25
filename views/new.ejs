@@ -1,0 +1,31 @@
+<% include partials/header %>
+
+<div class="container">
+	<div class="row">
+	   <h1 style="text-align:center;">Create New</h1>
+	   <div style="width:30%; margin:25px auto;">
+			<form action="/database" method="POST">
+				<div class="form-group">
+				    <input class="form-control" type="text" name="name" placeholder="name" required>
+				</div>
+				<div class="form-group">
+				    <input class="form-control" type="number" name="age" placeholder="age" required>
+				</div>
+				<div class="form-group">
+				    <input class="form-control" type="date" name="dob" placeholder="dob" required>
+				</div>
+				<div class="form-group">
+				    <input class="form-control" type="text" name="degree" placeholder="degree" required>
+				</div>
+				<div class="form-group">
+				    <button class="btn btn-lng btn-primary btn-block">Submit</button>
+                    
+				</div> <br>
+				<center>
+				<a href="/index">Go Back!</a>
+				</center>   
+			</form>
+		</div>
+    </div>
+</div>
+<% include partials/footer %>
